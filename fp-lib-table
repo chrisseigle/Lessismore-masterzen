@@ -2,4 +2,6 @@
   (lib (name Alps_Only)(type KiCad)(uri ${KIPRJMOD}/MX_Alps_Hybrid/Alps_Only.pretty)(options "")(descr ""))
   (lib (name random-keyboard-parts)(type KiCad)(uri ${KIPRJMOD}/random-keyboard-parts.pretty)(options "")(descr ""))
   (lib (name Type-C)(type KiCad)(uri ${KIPRJMOD}/Type-C.pretty)(options "")(descr ""))
+  (lib (name keebs)(type KiCad)(uri ${KIPRJMOD}/keebs.pretty)(options "")(descr ""))
+  (lib (name kicad_lib_tmk)(type KiCad)(uri ${KIPRJMOD}/kicad_lib_tmk)(options "")(descr ""))
 )

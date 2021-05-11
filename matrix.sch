@@ -633,6 +633,8 @@ F 3 "~" H 1225 4625 50  0001 C CNN
 	1    1225 4625
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	1225 4775 1975 4775
 $Comp
 L keyboard_parts:KEYSW K26
 U 1 1 60B38193
@@ -655,6 +657,9 @@ F 3 "~" H 1975 4625 50  0001 C CNN
 	1    1975 4625
 	0    -1   -1   0   
 $EndComp
+Connection ~ 1975 4775
+Wire Wire Line
+	1975 4775 2725 4775
 $Comp
 L keyboard_parts:KEYSW K27
 U 1 1 60B381A4
@@ -699,6 +704,12 @@ F 3 "~" H 3475 4625 50  0001 C CNN
 	1    3475 4625
 	0    -1   -1   0   
 $EndComp
+Connection ~ 3475 4775
+Wire Wire Line
+	3475 4775 4225 4775
+Connection ~ 2725 4775
+Wire Wire Line
+	2725 4775 3475 4775
 $Comp
 L keyboard_parts:KEYSW K29
 U 1 1 60B381C6
@@ -743,6 +754,9 @@ F 3 "~" H 4975 4625 50  0001 C CNN
 	1    4975 4625
 	0    -1   -1   0   
 $EndComp
+Connection ~ 4975 4775
+Wire Wire Line
+	4975 4775 5725 4775
 $Comp
 L keyboard_parts:KEYSW K31
 U 1 1 60B381E6
@@ -787,6 +801,15 @@ F 3 "~" H 6475 4625 50  0001 C CNN
 	1    6475 4625
 	0    -1   -1   0   
 $EndComp
+Connection ~ 6475 4775
+Connection ~ 5725 4775
+Wire Wire Line
+	5725 4775 6475 4775
+Connection ~ 4225 4775
+Wire Wire Line
+	4225 4775 4975 4775
+Wire Wire Line
+	6475 4775 7225 4775
 $Comp
 L Device:D D33
 U 1 1 60B3820D
@@ -809,6 +832,9 @@ F 3 "" H 7525 4475 60  0000 C CNN
 	1    7525 4475
 	1    0    0    -1  
 $EndComp
+Connection ~ 7225 4775
+Wire Wire Line
+	7225 4775 7975 4775
 $Comp
 L keyboard_parts:KEYSW K34
 U 1 1 60B3821B
@@ -831,6 +857,9 @@ F 3 "~" H 7975 4625 50  0001 C CNN
 	1    7975 4625
 	0    -1   -1   0   
 $EndComp
+Connection ~ 7975 4775
+Wire Wire Line
+	7975 4775 8725 4775
 $Comp
 L keyboard_parts:KEYSW K35
 U 1 1 60B3822C
@@ -853,6 +882,7 @@ F 3 "~" H 8725 4625 50  0001 C CNN
 	1    8725 4625
 	0    -1   -1   0   
 $EndComp
+Connection ~ 8725 4775
 $Comp
 L keyboard_parts:KEYSW K36
 U 1 1 60B3823E
@@ -897,11 +927,18 @@ Wire Wire Line
 	8575 3625 8575 4475
 Wire Wire Line
 	9325 3625 9325 4475
+Wire Wire Line
+	10075 3625 10075 3925
 Text GLabel 1000 3075 0    50   Input ~ 0
 row0
 Wire Wire Line
+	8725 4775 9475 4775
+Wire Wire Line
 	1225 3925 1000 3925
 Connection ~ 1225 3925
+Wire Wire Line
+	1225 4775 1000 4775
+Connection ~ 1225 4775
 Text GLabel 1000 3925 0    50   Input ~ 0
 row1
 Text GLabel 1000 4775 0    50   Input ~ 0
@@ -939,6 +976,8 @@ Wire Wire Line
 	8575 2775 8575 3625
 Wire Wire Line
 	9325 2775 9325 3625
+Wire Wire Line
+	10075 2775 10075 3075
 Wire Wire Line
 	1000 3075 1225 3075
 Connection ~ 1225 3075
@@ -999,42 +1038,15 @@ col10
 Text GLabel 10075 2225 1    50   Input ~ 0
 col11
 Wire Wire Line
-	9475 4775 8725 4775
-Connection ~ 1225 4775
+	9475 3075 10075 3075
+Connection ~ 9475 3075
+Connection ~ 10075 3075
 Wire Wire Line
-	1225 4775 1000 4775
-Connection ~ 1975 4775
+	10075 3075 10075 3625
 Wire Wire Line
-	1975 4775 1225 4775
-Connection ~ 2725 4775
+	9475 3925 10075 3925
+Connection ~ 9475 3925
+Connection ~ 10075 3925
 Wire Wire Line
-	2725 4775 1975 4775
-Connection ~ 3475 4775
-Wire Wire Line
-	3475 4775 2725 4775
-Connection ~ 4225 4775
-Wire Wire Line
-	4225 4775 3475 4775
-Connection ~ 4975 4775
-Wire Wire Line
-	4975 4775 4225 4775
-Connection ~ 5725 4775
-Wire Wire Line
-	5725 4775 4975 4775
-Connection ~ 6475 4775
-Wire Wire Line
-	6475 4775 5725 4775
-Connection ~ 7225 4775
-Wire Wire Line
-	7225 4775 6475 4775
-Connection ~ 7975 4775
-Wire Wire Line
-	7975 4775 7225 4775
-Connection ~ 8725 4775
-Wire Wire Line
-	8725 4775 7975 4775
-Wire Wire Line
-	10075 3625 10075 4475
-Wire Wire Line
-	10075 2775 10075 3625
+	10075 3925 10075 4475
 $EndSCHEMATC
